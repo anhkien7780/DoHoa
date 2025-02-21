@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body onload="main()">
+        <h2>Position</h2>
+        <label for="x_position" >X:</label><br>
+        <input type="text" id="x_position" value="0.0"><br>
+        <label for="y_position" >Y:</label><br>
+        <input type="text" id="y_position" value="0.0"><br>
+        <label for="z_position" >Z:</label><br>
+        <input type="text" id="z_position" value="0.0"><br>
+        <label for="point_size" >Point Size:</label><br>
+        <input type="text" id="point_size" value="10.0"><br>
+        <h2>RGB Color</h2>
+        <label for="red">Red:</label>
+        <input type="text" id="red" value="1.0">
+        <label for="green">Green:</label>
+        <input type="text" id="green" value="1.0">
+        <label for="blue">Blue:</label>
+        <input type="text" id="blue" value="1.0"> <br> <br>
+        <canvas id = "webgl" height="400" width="400"></canvas>
+        <input type="button" id="update_button" value="Cập nhật" onclick="update()">
+        <script src="WebGL.js"></script>
+        <script src="webgl-utils.js"></script>
+        <script src="webgl-debug.js"></script>
+        <script src="cuon-utils.js"></script>
+    </body>
+</html>
